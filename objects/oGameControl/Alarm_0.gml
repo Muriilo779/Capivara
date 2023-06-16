@@ -8,7 +8,14 @@ var xWall = room_width + 120;
 var yLowWall =  irandom_range(832, 1568);
 
 //Y position for the high wall
-var yHighWall = (yLowWall - 1080) - 520;
+if(global.coinsTotal < 10)
+{
+	var yHighWall = (yLowWall - 1080) -  520;
+}
+else if(global.coinsTotal >= 10)
+{
+	var yHighWall = (yLowWall - 1080) -  488;
+}
 
 //Creating both walls and putting them into a variable
 var lowWall = instance_create_layer(xWall, yLowWall, "Walls", oWall,);
@@ -23,4 +30,4 @@ show_debug_message(lowWall.y);
 show_debug_message(highWall.y);
 
 //Setting the alarm event to create another wall 
-alarm[0] = room_speed * random_range(2, 3);
+alarm[0] = room_speed * random_range(1.5, 2.5);
