@@ -1,4 +1,5 @@
 /// @description Start variables
 
-vspeed = 20;
+velv = 0;
+grav = 1.5;
 angle = 0;

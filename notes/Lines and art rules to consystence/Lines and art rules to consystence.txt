@@ -1,0 +1,2 @@
+Main line = 7.2
+Inside lines = 6.0 

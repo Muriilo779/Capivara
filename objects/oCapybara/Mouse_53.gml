@@ -1,3 +1,4 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
-vspeed = -14;
+velv = 0;
+velv -= 27;
