@@ -1,4 +1,5 @@
-/// @description Instiante the walls
+/// @description Instiante the walls if we are in the game itself
+
 
 //X position for the walls
 var xWall = room_width + 120;

@@ -1,4 +1,4 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
-global.TotalCoins++;
-instance_destroy(other);
+image_yscale = 0.95;
+image_xscale = 0.95;
