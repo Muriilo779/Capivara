@@ -1,3 +1,2 @@
-/// @description Inserir descrição aqui
-// Você pode escrever seu código neste editor
-room_goto(MenuCredits);
+/// @description Go to another room
+room_goto(MenuScore);

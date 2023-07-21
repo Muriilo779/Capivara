@@ -2,4 +2,5 @@
 if(maxScore <= global.TotalCoins)
 {
 	maxScore = global.TotalCoins;
+	SaveGame();
 }

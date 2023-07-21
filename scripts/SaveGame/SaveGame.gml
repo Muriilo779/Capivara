@@ -3,12 +3,7 @@
 function SaveGame()
 {
 	var _saveData = array_create(0);
-	
-	with(oScoreControl)
-	{
-		var _saveScore = { maxScore : maxScore }
-		array_push(_saveData, _saveScore);
-	}
+	_saveData[0] = oScoreControl.maxScore;
 	
 	//Turn all this data into a JSON string and save it via a buffer
 	var _string = json_stringify(_saveData);
@@ -24,19 +19,21 @@ function LoadGame()
 {
 	if(file_exists("CapySave.uwu"))
 	{
+		//Load the content
 		var _buffer = buffer_load("CapySave.uwu");
+		//Reads the content
 		var _string = buffer_read(_buffer, buffer_string);
+
 		buffer_delete(_buffer);
-		
+		//JsonParse takes a json struct and converts into an array 		
 		var _loadData = json_parse(_string);
-		var _scoreControl = array_first(_loadData);
-		while(array_length(_loadData) > 0)
-		{
-			with(oScoreControl)
-			{
-				maxScore = _scoreControl.maxScore;
-			}
-			
-		}
+		
+		//Take the pontuation and then put into the score Obj
+		with(oScoreControl)	maxScore = _loadData[0];
+	}
+	else
+	{
+		//if theres no save, maxScore = 0
+		maxScore = 0;
 	}
 }

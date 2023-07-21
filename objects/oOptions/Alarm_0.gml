@@ -1,2 +1,2 @@
-/// @description Do something idk 
-room_goto(MenuCredits);
+/// @description Go to another room 
+room_goto(MenuOption);

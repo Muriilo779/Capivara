@@ -1,5 +1,4 @@
-/// @description Inserir descrição aqui
-// Você pode escrever seu código neste editor
+/// @description Get bigger if we click in it
 if(!pressed) exit;
 
 image_xscale = lerp(image_xscale, 1.1, 0.25);
