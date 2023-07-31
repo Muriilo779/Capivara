@@ -1,7 +1,12 @@
+if(global.Pause)
+{
+	image_speed = 0;
+	exit;
+}
 if(mouse_check_button_pressed(mb_left))
 {
 	velv = 0;
-	velv -= 27;
+	velv -= 22;
 }
 
 velv += grav;

@@ -1,5 +1,5 @@
 /// @description Instiante the walls if we are in the game itself
-
+if(global.Pause) exit;
 
 //X position for the walls
 var xWall = room_width + 120;
@@ -36,4 +36,4 @@ show_debug_message(lowWall.y);
 show_debug_message(highWall.y);
 
 //Setting the alarm event to create another wall 
-alarm[0] = room_speed * random_range(1.5, 2.5);
+alarm[0] = room_speed * random_range(1.25, 2.0);

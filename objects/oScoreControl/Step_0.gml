@@ -1,8 +1,6 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
-if(room == Menu || room == Game) exit;
-
-if(keyboard_check_pressed(vk_backspace))
-{
-	room_goto(Menu)
-}
+if(room == Game)
+ { 
+	if(keyboard_check_pressed(vk_backspace)) global.Pause = !global.Pause;
+ }
