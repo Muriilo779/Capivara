@@ -3,7 +3,7 @@
 function SaveGame()
 {
 	var _saveData = array_create(0);
-	_saveData[0] = oScoreControl.maxScore;
+	_saveData[0] = oGameControl.maxScore;
 	
 	//Turn all this data into a JSON string and save it via a buffer
 	var _string = json_stringify(_saveData);
@@ -29,7 +29,7 @@ function LoadGame()
 		var _loadData = json_parse(_string);
 		
 		//Take the pontuation and then put into the score Obj
-		with(oScoreControl)	maxScore = _loadData[0];
+		with(oGameControl)	maxScore = _loadData[0];
 	}
 	else
 	{

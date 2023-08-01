@@ -1,9 +1,4 @@
-/// @description Every frame
-if(global.Pause)
-{
-	hspeed = 0;
-	exit;
-}
+if(global.GameOver) hspeed = 0;
 
 if (x <= -800) {
 	instance_destroy();

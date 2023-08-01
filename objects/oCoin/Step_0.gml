@@ -7,3 +7,5 @@ else
 {
 	instance_destroy();
 }
+
+if(global.GameOver) instance_destroy();
