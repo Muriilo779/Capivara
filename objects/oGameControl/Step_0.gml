@@ -1,11 +1,5 @@
 /// @description Check if things happened
-if(room == MenuOption || room == MenuScore) 
-{
-	if(keyboard_check_pressed(vk_backspace))
-	{
-		room_goto(Menu);
-	}	
-}
+
 /*
 If I lose the game, and we're on the game, and the sequence didn't show up yet,
 and it has passed 1 second after the player collide with the wall, create a 
@@ -23,6 +17,7 @@ if(global.GameOver  && room = Game && sequenceVar ==  true && global.Timer <= 0)
 	fontTimer = false;
 }
 
+//Can we delete the GameOverSequence now sir
 if(deleteSequence) 
 {
 	//Destroy the previous sequence

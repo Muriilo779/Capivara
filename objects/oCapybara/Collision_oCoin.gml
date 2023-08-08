@@ -1,4 +1,3 @@
-/// @description Inserir descrição aqui
-// Você pode escrever seu código neste editor
+/// @description If it collide, making one more point 
 global.TotalCoins++;
 instance_destroy(other);
